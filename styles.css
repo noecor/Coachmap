@@ -442,20 +442,54 @@ button {
 
 .listRecentItem {
   width: 300px;
-  height: 390px;
+  height: auto;
   box-shadow: 5px 10px 10px #b4b4b4;
   margin: 10px;
   padding: 10px;
+}
+.listRecentItemContainer {
+  background-color: #1f3749;
+  width: 300px;
+  height: 160px;
+  display: flex;
+  border: 2px solid greenyellow;
 }
 .listRecentItemImage {
   width: 300px;
   height: 160px;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0px auto;
+  opacity: 0.4;
+  background-color: #1f3749;
 }
 
 .listRecentItemExcerpt {
   width: auto;
+  font-size: 0.8rem;
+}
+#overlay2 {
+  background-color: #1f3749;
+  width: 300px;
+  height: 160px;
+  display: flex;
+}
+#blog-title {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #1f3749;
+}
+#truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+#see-more {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #1f3749;
+  float: right;
 }
 
 .carrousel {
@@ -489,8 +523,14 @@ button {
   width: 300px;
   margin: 10px;
 }
-.div220px {
-  width: 220px;
+.width {
+  width: 90%;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+.div300px {
+  width: 300px;
+  justify-content: center;
 }
 .div400px {
   width: 400px;

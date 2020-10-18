@@ -39,15 +39,16 @@ const showResults = (list) => {
     let bloggy = document.createElement("li");
     bloggy.setAttribute("class", "listRecentItem");
     bloggy.innerHTML = `<a href="${elem.link}>
-        <div class="listRecentItemImage">
-            <a href="${elem.link}"><img src="${elem.imageScr}" alt="${elem.title}" class="listRecentItemImage"></a>
+        <div class="listRecentItemContainer">
+            <a href="${elem.link}"><img src="${elem.imageScr}" alt="${elem.title}" class="listRecentItemImage" id="overlay2"></a>
         </div>
         <div class="listRecentItemTitle width300px">
-            <a href="${elem.link}><h4 class="p18px">${elem.title}</h4></a>
+            <a href="${elem.link}><h4 class="p18px" id="blog-title">${elem.title}</h4></a>
         </div>
-        <div class="listRecentItemExcerpt p14px width300px">
-            <p>${elem.excerpt}</p>
+        <div class="listRecentItemExcerpt width300px" id="truncate">
+            <p id="truncate" >${elem.excerpt}</p>
         </div>
+        <a href="${elem.link}" alt="leer mas" id="see-more"> Ver más</a>
     </a>`;
     container.appendChild(bloggy);
   });
