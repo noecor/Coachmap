@@ -112,6 +112,7 @@ a {
   text-decoration-color: none;
   transition: 0.5s ease all;
   justify-content: center;
+  color: #1f3749;
 }
 a:hover {
   color: white;
@@ -258,10 +259,20 @@ select {
   align-items: baseline;
   transition: 0.3s ease all;
   display: flex;
-  position: relative;
+  /*font-size: 10px;
+  margin: 0 auto;*/
 }
 .btn2:hover {
   color: white;
+  fill: white;
+}
+.iconos {
+  fill: #b13346;
+  justify-content: center;
+  align-items: center;
+}
+.iconos:hover {
+  fill: white;
 }
 h2 {
   font-size: 20px;
@@ -289,13 +300,12 @@ button {
   border: none;
 }
 #pButton {
-  width: 150px;
+  width: 85%;
   color: #1f3749;
   text-align: center;
   justify-content: center;
   align-items: baseline;
   font-weight: bolder;
-  margin: 15px;
   font-size: 10px;
 }
 #pButton:hover {
