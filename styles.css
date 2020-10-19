@@ -319,6 +319,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .square {
   width: 50%;
@@ -478,11 +479,14 @@ button {
   font-weight: bolder;
   color: #1f3749;
 }
+#blog-title:hover {
+  color: white;
+}
 #truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 #see-more {
@@ -491,14 +495,43 @@ button {
   color: #1f3749;
   float: right;
 }
-
-.carrousel {
+#see-more:hover {
+  color: white;
+}
+/*CARROUSEL*/
+.carrousel-img {
   border: 3px solid #1f3749;
   margin: 5px;
+  vertical-align: top;
 }
 .greyColor {
   color: grey;
 }
+.contenedor-carrousel {
+  width: 87%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+.img {
+  color: white;
+}
+#left-arrow {
+  align-items: center;
+}
+#right-arrow {
+  align-items: center;
+}
+/*NEXT SECTION*/
 .margin-top {
   margin-top: 2rem;
 }

@@ -58,3 +58,16 @@ getRes();
 
 //href="${elem.link}" href="${elem.link}"
 //class="flexContainer"
+const row = document.querySelector(".contenedor-carrousel");
+const coaches = document.querySelector(".img");
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
+
+rightArrow.addEventListener("click", () => {
+  row.scrollLeft += row.offsetWidth;
+  console.log(row.scrollLeft);
+});
+
+leftArrow.addEventListener("click", () => {
+  row.scrollLeft -= row.offsetWidth;
+});
