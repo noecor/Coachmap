@@ -38,9 +38,9 @@ const showResults = (list) => {
   list.forEach((elem) => {
     let bloggy = document.createElement("li");
     bloggy.setAttribute("class", "listRecentItem");
-    bloggy.innerHTML = `<a href="${elem.link}>
-        <div class="listRecentItemContainer">
-            <a href="${elem.link}"><img src="${elem.imageScr}" alt="${elem.title}" class="listRecentItemImage" id="overlay2"></a>
+    bloggy.innerHTML = `<a href="${elem.link} id="overlay2">
+        <div class="listRecentItemContainer" >
+            <a href="${elem.link}" class="size"><img src="${elem.imageScr}" alt="${elem.title}" class="listRecentItemImage" ></a>
         </div>
         <div class="listRecentItemTitle width300px">
             <a href="${elem.link}><h4 class="p18px" id="blog-title">${elem.title}</h4></a>

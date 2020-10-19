@@ -463,15 +463,15 @@ button {
   width: 300px;
   height: 160px;
   display: flex;
-  border: 2px solid greenyellow;
 }
 .listRecentItemImage {
   width: 300px;
   height: 160px;
   justify-content: center;
   margin: 0px auto;
-  opacity: 0.4;
+  opacity: 0.7;
   background-color: #1f3749;
+  /*border: 2px solid red;*/
 }
 
 .listRecentItemExcerpt {
@@ -482,8 +482,8 @@ button {
   background-color: #1f3749;
   width: 300px;
   height: 160px;
-  display: flex;
 }
+
 #blog-title {
   font-size: 1rem;
   font-weight: bolder;
