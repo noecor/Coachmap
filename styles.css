@@ -200,7 +200,7 @@ select {
   justify-content: center;
   align-content: center;
   background-image: url("assets/main.png");
-  background-color: grey;
+  background-color: #b13346;
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: cover;
@@ -229,6 +229,7 @@ select {
   align-items: center;
   z-index: 2;
 }
+
 .container2 {
   margin: 10px auto;
   width: 80%;
@@ -454,30 +455,30 @@ button {
 }
 
 .listRecentItem {
-  width: 300px;
+  width: 22vw;
   height: auto;
   box-shadow: 5px 10px 10px #b4b4b4;
   margin: 10px;
   padding: 10px;
+  overflow: hidden;
 }
 .listRecentItemContainer {
   background-color: #1f3749;
-  width: 300px;
+  width: 22vw;
   height: 160px;
   display: flex;
 }
 .listRecentItemImage {
-  width: 300px;
+  width: 22vw;
   height: 160px;
   justify-content: center;
   margin: 0px auto;
   opacity: 0.5;
   background-color: #1f3749;
-  /*border: 2px solid red;*/
 }
 
 .listRecentItemExcerpt {
-  width: auto;
+  width: 90%;
   font-size: 0.8rem;
 }
 #overlay2 {
@@ -561,11 +562,11 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
 }
 .width300px {
-  width: 300px;
+  width: 21vw;
   margin: 10px;
 }
 .flexContainer4 {
@@ -628,7 +629,7 @@ footer {
   margin-right: 5vw;
 }
 .footer1 {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -688,12 +689,19 @@ hr {
 }
 
 /* xs devices */
-@media (max-width: 400px) {
+@media (max-width: 321px) {
+  .logo-mobile {
+    width: 100%;
+    margin: 0 auto;
+  }
   .logo {
-    display: none;
+    width: 40vw;
+    margin-left: 25vw;
   }
   nav {
-    height: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
   }
   .menu {
     flex-direction: column;
@@ -704,17 +712,28 @@ hr {
     margin: 5px;
     align-items: flex-start;
   }
-
   .login {
     margin: 0px;
   }
   .mainContainer {
     height: auto;
     width: 100%;
+    background-image: url("assets/maingde.png");
+    background-size: contain;
+  }
+  .subtitle {
+    z-index: 3;
+    margin-top: 16vw;
+  }
+  form {
+    background-color: #b13346;
+    margin-bottom: 10px;
+    z-index: 4;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: lighter;
+    margin-top: 8vh;
   }
   select {
     margin: 5px;
@@ -722,11 +741,16 @@ hr {
   }
   .button {
     margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1f3749;
+  }
+  #overlay {
+    height: 46%;
   }
   .sectionTitle {
     font-size: 1.5rem;
     padding: 0;
-    margin: 10px;
+    margin: 20px;
   }
   .square {
     width: 100%;
@@ -748,7 +772,7 @@ hr {
     height: 400px;
   }
   .contenedor-carrousel {
-    width: 50%;
+    width: 47%;
   }
   .carrousel-img {
     width: 100px;
@@ -779,6 +803,10 @@ hr {
   }
   .flexContainer3 {
     width: 100%;
+  }
+  .flexContainer4 {
+    width: 80%;
+    justify-content: center;
   }
   .mainButton2 {
     font-size: 1rem;
@@ -807,12 +835,13 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
   .logoFooter {
     margin: 0 auto;
     width: 70%;
   }
   .footer1 {
-    padding-left: 5vw;
+    padding-left: 8vw;
   }
   .footer2 {
     padding-left: 30px;
@@ -822,7 +851,176 @@ hr {
     margin: 0px;
   }
   #copyright {
-    padding-left: 9vw;
+    padding-left: 8vw;
+  }
+}
+@media (min-width: 375px) and (max-width: 400px) {
+  .gral-container {
+    overflow: hidden;
+  }
+  .logo-mobile {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 40vw;
+    margin-left: 25vw;
+  }
+  nav {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .menuItem {
+    font-size: 1rem;
+    margin: 5px;
+    align-items: flex-start;
+  }
+  .login {
+    margin: 0px;
+  }
+  .mainContainer {
+    height: auto;
+    width: 100%;
+    background-image: url("assets/maingde.png");
+    background-size: contain;
+  }
+  .subtitle {
+    z-index: 3;
+    margin-top: 12vw;
+  }
+  form {
+    background-color: #b13346;
+    margin-bottom: 10px;
+    z-index: 4;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  select {
+    margin: 5px;
+    width: 80%;
+  }
+  .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1f3749;
+  }
+  #overlay {
+    height: 49%;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 20px;
+  }
+  .square {
+    width: 100%;
+  }
+  .video {
+    width: 350px;
+    height: auto;
+  }
+  .grey {
+    flex-direction: column;
+  }
+  .space {
+    width: 100%;
+  }
+  .squareBtn {
+    margin: 0px;
+  }
+  .flexContainer2 {
+    height: 400px;
+  }
+  .contenedor-carrousel {
+    width: 40%;
+  }
+  .carrousel-img {
+    width: 100px;
+    height: auto;
+  }
+  #noIcon {
+    height: 10px;
+  }
+  .mainButton {
+    width: 130px;
+    height: 80px;
+    font-size: 15px;
+  }
+  .p10px {
+    display: none;
+  }
+  .listRecentItemContainer {
+    width: 200px;
+  }
+  .listRecentItem {
+    width: 200px;
+  }
+  .listRecentItemImage {
+    width: 200px;
+  }
+  .listRecentItemExcerpt {
+    width: 180;
+  }
+  .flexContainer3 {
+    width: 100%;
+  }
+  .flexContainer4 {
+    width: 70%;
+    justify-content: center;
+  }
+  .mainButton2 {
+    font-size: 1rem;
+  }
+  .width300px {
+    width: 80%;
+  }
+  .testimonios-img {
+    width: 200px;
+  }
+  .div400px {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    margin: 0px;
+  }
+  hr {
+    width: 98%;
+  }
+  .inline {
+    display: flex;
+    flex-direction: column;
+  }
+  .inline2 {
+    margin-left: 0vw;
+  }
+  .logoFooter {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .footer1 {
+    padding-left: 8vw;
+  }
+  .footer2 {
+    padding-left: 30px;
+    width: 80%;
+  }
+  .margin-left {
+    margin: 0px;
+  }
+  #copyright {
+    padding-left: 7vw;
   }
 }
 /*mobile devices*/
@@ -842,19 +1040,28 @@ hr {
   .mainContainer {
     height: auto;
     width: 100%;
+    background-image: url("assets/maingde.png");
+    background-size: contain;
+  }
+  .subtitle {
+    margin-top: 7rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: lighter;
+    margin-top: 13vw;
   }
   select {
     margin: 5px;
     width: 80%;
   }
   .button {
-    margin-top: 10px;
+    margin: 10px 0px;
+    background-color: #1f3749;
   }
-
+  #overlay {
+    height: 54%;
+  }
   .square {
     width: 100%;
   }
@@ -875,7 +1082,6 @@ hr {
   .squareBtn {
     margin: 0px;
   }
-
   .mainButton {
     width: 130px;
     height: 80px;
@@ -900,7 +1106,7 @@ hr {
     width: 200px;
   }
   .contenedor-carrousel {
-    width: 71%;
+    width: 69%;
   }
   .carrousel-img {
     width: 100px;
@@ -912,6 +1118,9 @@ hr {
   .width300px {
     width: 180px;
   }
+  .div300px {
+    width: 330px;
+  }
   .div400px {
     width: 100%;
   }
@@ -920,6 +1129,10 @@ hr {
   }
   .flexContainer3 {
     width: 100%;
+  }
+  .flexContainer4 {
+    width: 100%;
+    justify-content: center;
   }
   footer {
     width: 100%;
@@ -949,8 +1162,9 @@ hr {
 }
 
 /*medium devices*/
-@media (min-width: 577px) and (max-width: 991px) {
+@media (min-width: 577px) and (max-width: 990px) {
   .gral-container {
+    width: 100%;
     overflow: hidden;
   }
   .logo {
@@ -963,6 +1177,7 @@ hr {
     height: auto;
     width: 100%;
   }
+
   h1 {
     font-size: 2rem;
     font-weight: lighter;
@@ -985,13 +1200,44 @@ hr {
     width: 100%;
   }
   .contenedor-carrousel {
-    width: 65%;
+    width: 73%;
   }
   #noIcon {
     height: 10px;
   }
   .width {
-    justify-content: center;
+    width: 80%;
+  }
+  #blog-title {
+    font-size: 0.7rem;
+  }
+  #truncate {
+    font-size: 0.6rem;
+  }
+  #see-more {
+    font-size: 0.7rem;
+  }
+  .listRecentItemContainer {
+    width: 300px;
+  }
+  .listRecentItemImage {
+    width: 300px;
+  }
+  .listRecentItem {
+    width: 300px;
+  }
+  #blog-title {
+    width: 280px;
+    font-size: 1rem;
+  }
+  #truncate {
+    font-size: 1rem;
+  }
+  #see-more {
+    font-size: 1rem;
+  }
+  .width300px {
+    width: 37vw;
   }
   .div300px {
     width: 80vw;
@@ -1036,7 +1282,7 @@ hr {
   }
 }
 /*devices bigger than 990px*/
-@media (min-width: 990px) and (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
   .logo {
     width: 100px;
   }
@@ -1053,6 +1299,10 @@ hr {
     margin: 5px;
     width: 180px;
   }
+  .btn2 {
+    width: 180px;
+    height: 180px;
+  }
   .space {
     justify-content: space-around;
   }
@@ -1060,10 +1310,10 @@ hr {
     font-size: 1.8rem;
   }
   .mainButton3 {
-    width: 19vw;
+    width: 14vw;
   }
   .contenedor-carrousel {
-    width: 76%;
+    width: 69%;
   }
   #noIcon {
     height: 10px;
@@ -1072,8 +1322,14 @@ hr {
     flex-direction: row;
   }
   .flexContainer3 {
-    width: 75%;
+    width: 85%;
     justify-content: space-around;
+  }
+  .width {
+    width: 80%;
+  }
+  .width300px {
+    width: 16vw;
   }
   .div300px {
     width: 20vw;
@@ -1115,7 +1371,7 @@ hr {
     justify-content: flex-end;
   }
   #copyright {
-    padding-left: 3vw;
+    padding-left: 17vw;
   }
   /*bigger than 1200px*/
   @media (min-width: 1200px) and (max-width: 10199px) {
@@ -1126,7 +1382,19 @@ hr {
       height: 15vh;
     }
     .mainButton3 {
-      width: 19vw;
+      width: 188px;
+    }
+    #blog-title {
+      font-size: 1.5rem;
+    }
+    .width300px {
+      width: 13vw;
+    }
+    .contenedor-carrousel {
+      width: 81%;
+    }
+    .testimonios-img {
+      width: 300px;
     }
     footer {
       height: 200px;
@@ -1146,11 +1414,8 @@ hr {
     .containerFooter {
       justify-content: center;
     }
-    .footer1 {
-      justify-content: center;
-    }
-    .footer2 {
-      justify-content: center;
+    #copyright {
+      margin-right: 4vw;
     }
   }
 }
